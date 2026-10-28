@@ -2,6 +2,10 @@
 
 **English** · [Deutsch](README.de.md)
 
+<p align="center"><img src="docs/hero.svg" alt="Hyprwink" width="100%"></p>
+
+<p align="center"><b>Look at a window – it's focused. Raise your hand – it listens. Grab a window in the air – throw it to another screen.</b></p>
+
 Dictation, reading aloud, your own hand gestures and "focus follows gaze" for
 [Hyprland](https://hyprland.org) – with an ordinary webcam and a microphone.
 Interface, dictation and speech output each in English or German.
@@ -18,6 +22,8 @@ Interface, dictation and speech output each in English or German.
 > Use it at your own risk; feel free to fork it.
 
 ## Features
+
+<p align="center"><img src="docs/demo.svg" alt="Gaze moves the focus, dictation runs, a hand grabs a window and drags it onto the upper monitor" width="100%"></p>
 
 ### Dictation
 - **Ctrl+Space** starts and stops recording; the text is pasted into the focused window.
@@ -143,6 +149,17 @@ and libadwaita from the system.
 Shortcuts and the window rule of the mini view go into your own Hyprland config:
 see [`src/hyprwink/data/hyprland.lua`](src/hyprwink/data/hyprland.lua) (`hyprwink setup` shows its path).
 
+| Shortcut | |
+|---|---|
+| Ctrl+Space | dictation on/off |
+| Esc / Enter | while dictating: cancel / stop and send (bound only then) |
+| Super+G | Hyprwink (camera) on/off |
+| Super+Alt+G | settings |
+
+That's all Hyprwink needs from your key bindings: the gesture actions (windows, workspaces, media,
+volume) talk to Hyprland directly, so they work whatever your own shortcuts are. Only the action
+"keyboard shortcut" types the combination you enter there.
+
 Update: `pipx upgrade hyprwink`, then `hyprwink setup`. Remove: `hyprwink remove` (per user: services,
 launcher, data, keys, integrations), then `pipx uninstall hyprwink`.
 
@@ -207,6 +224,7 @@ Two systemd user services, connected through Unix sockets (JSON lines):
   answers, `cli.py` commands.
 - **Integrations**: `src/hyprwink/data/` templates for the services and the launcher, Hyprland example, `examples/` example gestures;
   `src/hyprwink/quickshell/` Quickshell plugin (bar symbol with gaze dot, dictation pill).
+- **Pictures**: `docs/` banner and demo (animated SVG).
 
 ### Languages
 

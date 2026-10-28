@@ -2,6 +2,10 @@
 
 [English](README.md) · **Deutsch**
 
+<p align="center"><img src="docs/hero.svg" alt="Hyprwink" width="100%"></p>
+
+<p align="center"><b>Fenster anschauen – es hat den Fokus. Hand heben – es hört zu. Fenster in der Luft greifen – auf einen anderen Bildschirm werfen.</b></p>
+
 Spracheingabe, Vorlesen, eigene Handgesten und „Fokus folgt Blick“ für
 [Hyprland](https://hyprland.org) – mit einer normalen Webcam und einem Mikrofon.
 Oberfläche, Spracheingabe und Sprachausgabe je auf Englisch oder Deutsch.
@@ -18,6 +22,8 @@ Oberfläche, Spracheingabe und Sprachausgabe je auf Englisch oder Deutsch.
 > (Claude Code) entstanden. Nutzung auf eigenes Risiko; forken ausdrücklich erwünscht.
 
 ## Funktionen
+
+<p align="center"><img src="docs/demo.svg" alt="Der Blick setzt den Fokus, ein Diktat läuft, eine Hand greift ein Fenster und zieht es auf den oberen Monitor" width="100%"></p>
 
 ### Spracheingabe
 - **Strg+Leertaste** startet und beendet die Aufnahme, der Text wird ins Fenster mit Fokus eingefügt.
@@ -143,6 +149,17 @@ aus dem System.
 Tastenkürzel und Fensterregel der Mini-Ansicht kommen in die eigene Hyprland-Konfiguration:
 siehe [`src/hyprwink/data/hyprland.lua`](src/hyprwink/data/hyprland.lua) (`hyprwink setup` zeigt den Pfad).
 
+| Kürzel | |
+|---|---|
+| Strg+Leertaste | Spracheingabe an/aus |
+| Esc / Enter | beim Diktat: abbrechen / beenden und senden (nur dann belegt) |
+| Super+G | Hyprwink (Kamera) an/aus |
+| Super+Alt+G | Einstellungen |
+
+Mehr braucht Hyprwink nicht von deinen Tastenkürzeln: die Gesten-Aktionen (Fenster, Arbeitsflächen,
+Medien, Lautstärke) sprechen Hyprland direkt an und funktionieren unabhängig von deinen eigenen Kürzeln.
+Nur die Aktion „Tastenkürzel“ tippt die Kombination, die du dort einträgst.
+
 Aktualisieren: `pipx upgrade hyprwink`, dann `hyprwink setup`. Entfernen: `hyprwink remove`
 (je Benutzer: Dienste, Starter, Daten, Schlüssel, Einbindungen), dann `pipx uninstall hyprwink`.
 
@@ -207,6 +224,7 @@ Zwei systemd-Benutzerdienste, verbunden über Unix-Sockets (JSON-Zeilen):
   `answers.py` Claude-Code-Antworten, `cli.py` Befehle.
 - **Einbindungen**: `src/hyprwink/data/` Vorlagen für Dienste und Starter, Hyprland-Beispiel, `examples/` Beispielgesten;
   `src/hyprwink/quickshell/` Quickshell-Plugin (Leistensymbol mit Blickpunkt, Diktier-Pille).
+- **Bilder**: `docs/` Banner und Demo (animiertes SVG).
 
 ### Sprachen
 
