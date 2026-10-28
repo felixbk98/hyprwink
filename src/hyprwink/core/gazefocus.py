@@ -11,6 +11,10 @@ back and forth at a border. A window on another monitor than the focused
 one needs more: the gaze must be BORDER px inside that monitor and stay
 twice the dwell time, as the estimate is least sure across monitors.
 
+A monitor without windows gets the focus like that, too (gaze inside it by
+BORDER px, twice the dwell time), so a new window opens where the user
+looks, as with the mouse.
+
 The mouse wins: while it moves, and for MOUSE_PAUSE seconds after, the gaze
 does not move the focus.
 
@@ -117,6 +121,13 @@ class GazeFocus:
             return c["address"]
         return None
 
+    def empty_monitor_at(self, x, y):
+        """Id of the monitor without windows the gaze is clearly inside, or None."""
+        for mid, (mx, my, mw, mh) in self.monitors.items():
+            if mx + BORDER <= x < mx + mw - BORDER and my + BORDER <= y < my + mh - BORDER:
+                return None if any(c.get("monitor") == mid for c in self.windows) else mid
+        return None
+
     def update(self, raw, now=None, focus=True):
         """Returns the corrected gaze point (or None). focus=False: only the
         point (for the dot), the focus stays."""
@@ -131,8 +142,16 @@ class GazeFocus:
             self.candidate = None        # mouse in use; start over afterwards
             return point
         address = self.window_at(*point)
+        if address is None:
+            empty = self.empty_monitor_at(*point)
+            address = None if empty is None else ("monitor", empty)
         if address != self.candidate:
             self.candidate, self.since = address, now
+            return point
+        if isinstance(address, tuple):
+            if address != self.ours and now - self.since >= self.dwell * 2:
+                hypr.focus_monitor(address[1])
+                self.focused, self.ours = None, address
             return point
         dwell = self.dwell * (2 if self._other_monitor(address) else 1)
         if address and address != self.focused and now - self.since >= dwell:

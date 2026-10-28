@@ -205,6 +205,17 @@ def move_to_monitor(name):
     dispatch(f"hl.dsp.window.move({{ monitor = {lua_string(name)} }})")
 
 
+def focus_monitor(mid):
+    """Focus the monitor with this id (new windows open there), the mouse
+    pointer stays."""
+    try:
+        name = next(m["name"] for m in json.loads(_run("-j", "monitors") or "[]") if m["id"] == mid)
+    except (json.JSONDecodeError, StopIteration):
+        return
+    lua("local n = hl.get_config(\"cursor.no_warps\") hl.config({ cursor = { no_warps = true } }) "
+        f"hl.dispatch(hl.dsp.focus({{ monitor = {lua_string(name)} }})) hl.config({{ cursor = {{ no_warps = n }} }})")
+
+
 def focus(address):
     """Focus the window with this address."""
     lua(f'local w = hl.get_window("address:{address}") if w then hl.dispatch(hl.dsp.focus({{window = w}})) end')

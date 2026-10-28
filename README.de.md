@@ -82,6 +82,8 @@ Oberfläche, Spracheingabe und Sprachausgabe je auf Englisch oder Deutsch.
 
 ### Fokus folgt Blick
 - Das Fenster, auf dem der Blick bleibt, bekommt den Fokus (Reaktion schnell 0,15 s, mittel 0,3 s, langsam 0,5 s).
+- Auch ein Monitor ohne Fenster bekommt den Fokus, wie mit der Maus: ein neues Fenster (Kürzel, Geste) öffnet
+  sich dort, wo du hinschaust.
 - Kein Springen an Kanten: ein anderes Fenster zählt erst deutlich innerhalb; ein Fenster auf einem
   anderen Monitor erst 150 px hinter dessen Rand und nach doppelter Wartezeit.
 - Die Maus hat Vorrang: während sie sich bewegt und 0,5 s danach wechselt der Blick den Fokus nicht.

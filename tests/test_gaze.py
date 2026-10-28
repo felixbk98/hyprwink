@@ -113,6 +113,24 @@ def test_other_monitor_needs_more(monkeypatch):
     assert focused == ["up"]
 
 
+
+def test_empty_monitor_gets_focus(monkeypatch):
+    """Upper monitor without windows: looking at it focuses the monitor, once."""
+    wins = [{"address": "low", "at": (0, 1000), "size": (2000, 1000), "focusHistoryID": 0, "monitor": 0}]
+    mons = []
+    monkeypatch.setattr(gazefocus.hypr, "windows", lambda: wins)
+    monkeypatch.setattr(gazefocus.hypr, "monitors", lambda: {0: (0, 1000, 2000, 1000), 1: (0, 0, 2000, 1000)})
+    monkeypatch.setattr(gazefocus.hypr, "focus_monitor", mons.append)
+    monkeypatch.setattr(gazefocus.hypr, "cursor", lambda: None)
+    f = gazefocus.GazeFocus()
+    f.update((500, 500), now=1.0)
+    f.update((500, 500), now=1.4)
+    assert mons == []                              # 0.4 s < 2 × 0.3 s
+    f.update((500, 500), now=1.7)
+    f.update((500, 500), now=2.5)
+    assert mons == [1]
+
+
 def test_correction_from_pointer(monkeypatch):
     monkeypatch.setattr(gazefocus.hypr, "windows", lambda: [])
     monkeypatch.setattr(gazefocus.hypr, "monitors", lambda: {})

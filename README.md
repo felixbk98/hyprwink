@@ -81,6 +81,8 @@ Interface, dictation and speech output each in English or German.
 
 ### Focus follows gaze
 - The window the gaze rests on gets the focus (reaction fast 0.15 s, medium 0.3 s, slow 0.5 s).
+- A monitor without windows gets the focus, too, like with the mouse: a new window (shortcut, gesture) opens
+  where you look.
 - No flickering at borders: another window only counts well inside it; a window on another monitor only
   150 px past its edge and after twice the wait.
 - The mouse wins: while it moves and 0.5 s after, the gaze does not change the focus.
