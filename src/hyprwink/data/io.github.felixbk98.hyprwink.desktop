@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Hyprwink
+Exec={hyprwink} ui
+Icon=input-touchpad
+Categories=Utility;Accessibility;
+StartupWMClass=io.github.felixbk98.hyprwink
+Terminal=false

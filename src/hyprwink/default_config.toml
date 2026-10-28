@@ -1,0 +1,25 @@
+# Hyprwink fine tuning. Copy to ~/.config/hyprwink/config.toml and change
+# what you need; missing keys fall back to these defaults. What the window
+# sets (providers, voices, tempo, gaze, theme) is in settings.json.
+
+[camera]
+# "auto": the first webcam in /dev/v4l/by-id (stable when replugged), or a path.
+device = "auto"
+width = 1280
+height = 720
+fps = 30
+# Mirror the image so it behaves like a mirror.
+mirror = true
+
+[recognition]
+# How long a gesture must be held before it counts, in milliseconds.
+hold_ms = 200
+# A hand that moves more than this (fraction of the image) while a gesture
+# is being held does not trigger it.
+still_threshold = 0.06
+# A held gesture survives recognition dropouts this short.
+release_ms = 250
+# Hands that are not seen for this long are dropped.
+lost_ms = 200
+min_detection_confidence = 0.6
+min_tracking_confidence = 0.5

@@ -1,0 +1,13 @@
+[Unit]
+Description=Hyprwink: webcam gestures and gaze
+PartOf=graphical-session.target
+After=graphical-session.target hyprwink-core.service
+Wants=hyprwink-core.service
+
+[Service]
+ExecStart={python} -m hyprwink.vision
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

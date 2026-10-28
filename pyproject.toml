@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyprwink"
+version = "0.1.0"
+description = "Hand gestures, focus follows gaze, dictation and reading aloud for Hyprland"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+  "mediapipe>=0.10.20",
+  "opencv-python-headless>=4.10",
+  "numpy>=1.26",
+  "piper-tts>=1.3",
+  "faster-whisper>=1.2",
+  "sounddevice>=0.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/felixbk98/hyprwink"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+# Speech to text on an NVIDIA GPU (CUDA 12 libraries for faster-whisper).
+gpu = ["nvidia-cublas-cu12", "nvidia-cudnn-cu12>=9,<10"]
+
+[project.scripts]
+hyprwink = "hyprwink.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hyprwink = ["default_config.toml", "data/*", "data/examples/*", "quickshell/*", "locale/*/LC_MESSAGES/*.mo"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

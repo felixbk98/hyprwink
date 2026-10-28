@@ -1,0 +1,12 @@
+[Unit]
+Description=Hyprwink: actions, dictation, reading aloud
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart={python} -m hyprwink.core
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

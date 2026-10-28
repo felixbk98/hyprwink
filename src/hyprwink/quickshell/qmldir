@@ -1,0 +1,3 @@
+module qs.plugins.hyprwink
+BarWidget 1.0 BarWidget.qml
+DictationPill 1.0 DictationPill.qml

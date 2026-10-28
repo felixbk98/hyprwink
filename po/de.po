@@ -1,0 +1,1140 @@
+# German translation of Hyprwink.
+msgid ""
+msgstr ""
+"Project-Id-Version: hyprwink\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-28 21:46+0100\n"
+"PO-Revision-Date: 2026-10-27 13:00+0100\n"
+"Last-Translator: Felix\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/hyprwink/backup.py
+msgid "not a Hyprwink configuration"
+msgstr "keine Hyprwink-Konfiguration"
+
+#: ../src/hyprwink/backup.py
+msgid "made by a newer Hyprwink version"
+msgstr "von einer neueren Hyprwink-Version"
+
+#: ../src/hyprwink/backup.py
+#, python-brace-format
+msgid "unexpected content: {name}"
+msgstr "unerwarteter Inhalt: {name}"
+
+#: ../src/hyprwink/backup.py
+#, python-brace-format
+msgid "{name} is damaged"
+msgstr "{name} ist beschädigt"
+
+#: ../src/hyprwink/cli.py
+msgid "Hyprwink is not running (hyprwink-core.service)."
+msgstr "Hyprwink läuft nicht (hyprwink-core.service)."
+
+#: ../src/hyprwink/cli.py
+msgid "Error"
+msgstr "Fehler"
+
+#: ../src/hyprwink/cli.py
+msgid "Camera:"
+msgstr "Kamera:"
+
+#: ../src/hyprwink/cli.py
+msgid "off"
+msgstr "aus"
+
+#: ../src/hyprwink/cli.py
+msgid "on"
+msgstr "an"
+
+#: ../src/hyprwink/cli.py
+msgid "Camera service:"
+msgstr "Kameradienst:"
+
+#: ../src/hyprwink/cli.py
+msgid "connected"
+msgstr "verbunden"
+
+#: ../src/hyprwink/cli.py
+msgid "not connected"
+msgstr "nicht verbunden"
+
+#: ../src/hyprwink/cli.py
+msgid "Gesture:"
+msgstr "Geste:"
+
+#: ../src/hyprwink/cli.py
+msgid "Dictation, speech output, gestures, focus follows gaze"
+msgstr "Spracheingabe, Sprachausgabe, Gesten, Fokus folgt Blick"
+
+#: ../src/hyprwink/cli.py
+msgid "show the state"
+msgstr "Zustand anzeigen"
+
+#: ../src/hyprwink/cli.py
+msgid "camera off"
+msgstr "Kamera aus"
+
+#: ../src/hyprwink/cli.py
+msgid "camera on"
+msgstr "Kamera an"
+
+#: ../src/hyprwink/cli.py
+msgid "camera on / off"
+msgstr "Kamera an / aus"
+
+#: ../src/hyprwink/cli.py
+msgid "reload gestures and settings"
+msgstr "Gesten und Einstellungen neu laden"
+
+#: ../src/hyprwink/cli.py
+msgid "trigger an action (as by gesture)"
+msgstr "Aktion auslösen (wie per Geste)"
+
+#: ../src/hyprwink/cli.py
+msgid "built-in actions"
+msgstr "eingebaute Aktionen"
+
+#: ../src/hyprwink/cli.py ../src/hyprwink/ui/settings_page.py
+msgid "Dictation"
+msgstr "Spracheingabe"
+
+#: ../src/hyprwink/cli.py
+msgid "write the text into this file instead of pasting it"
+msgstr "Text in diese Datei statt einfügen"
+
+#: ../src/hyprwink/cli.py
+msgid "symbol in the pill for this recording"
+msgstr "Symbol in der Pille für diese Aufnahme"
+
+#: ../src/hyprwink/cli.py
+msgid "Claude Code hook (Stop): keep the answer of each session"
+msgstr "Claude-Code-Hook (Stop): Antwort je Sitzung merken"
+
+#: ../src/hyprwink/cli.py
+msgid "the state continuously as JSON"
+msgstr "Zustand fortlaufend als JSON"
+
+#: ../src/hyprwink/cli.py
+msgid "save the configuration to a file"
+msgstr "Konfiguration in eine Datei sichern"
+
+#: ../src/hyprwink/cli.py
+msgid "ZIP file"
+msgstr "ZIP-Datei"
+
+#: ../src/hyprwink/cli.py
+msgid "take over the configuration from a file (replaces everything)"
+msgstr "Konfiguration aus einer Datei übernehmen (ersetzt alles)"
+
+#: ../src/hyprwink/cli.py
+msgid "set up for this user (after installing)"
+msgstr "für diesen Benutzer einrichten (nach der Installation)"
+
+#: ../src/hyprwink/cli.py
+msgid "remove for this user (before uninstalling)"
+msgstr "für diesen Benutzer entfernen (vor der Deinstallation)"
+
+#: ../src/hyprwink/cli.py
+msgid "open the window"
+msgstr "Fenster öffnen"
+
+#: ../src/hyprwink/cli.py ../src/hyprwink/ui/app.py
+msgid "Mini view on/off"
+msgstr "Mini-Ansicht ein/aus"
+
+#: ../src/hyprwink/cli.py ../src/hyprwink/ui/app.py
+msgid "Open gestures"
+msgstr "Gesten öffnen"
+
+#: ../src/hyprwink/cli.py ../src/hyprwink/ui/app.py
+msgid "Show/hide the window"
+msgstr "Fenster zeigen/verstecken"
+
+#: ../src/hyprwink/cli.py ../src/hyprwink/ui/app.py
+msgid "Show/hide the settings"
+msgstr "Einstellungen zeigen/verstecken"
+
+#: ../src/hyprwink/core/dictation.py
+msgid "Microphone not available"
+msgstr "Mikrofon nicht verfügbar"
+
+#: ../src/hyprwink/core/dictation.py
+#, python-brace-format
+msgid "{provider}: {error} – converted locally"
+msgstr "{provider}: {error} – lokal umgewandelt"
+
+#: ../src/hyprwink/core/dictation.py
+msgid "Dictation failed"
+msgstr "Spracheingabe fehlgeschlagen"
+
+#: ../src/hyprwink/core/reader.py
+msgid "Code block."
+msgstr "Codeblock."
+
+#: ../src/hyprwink/core/reader.py
+msgid "Nothing to read – select some text"
+msgstr "Nichts zum Vorlesen – Text markieren"
+
+#: ../src/hyprwink/core/reader.py
+#, python-brace-format
+msgid "Reading aloud: {error}"
+msgstr "Vorlesen: {error}"
+
+#: ../src/hyprwink/core/stt/elevenlabs.py ../src/hyprwink/core/tts/fishaudio.py
+msgid "key missing"
+msgstr "Schlüssel fehlt"
+
+#: ../src/hyprwink/core/stt/elevenlabs.py ../src/hyprwink/core/tts/fishaudio.py
+msgid "key invalid"
+msgstr "Schlüssel ungültig"
+
+#: ../src/hyprwink/core/stt/elevenlabs.py ../src/hyprwink/core/tts/fishaudio.py
+msgid "not reachable"
+msgstr "nicht erreichbar"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Lessac (US, best quality)"
+msgstr "Lessac (US, beste Qualität)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Ryan (US, male)"
+msgstr "Ryan (US, männlich)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Amy (US, female)"
+msgstr "Amy (US, weiblich)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Alan (British, male)"
+msgstr "Alan (britisch, männlich)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Jenny (British, female)"
+msgstr "Jenny (britisch, weiblich)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Thorsten (best quality)"
+msgstr "Thorsten (beste Qualität)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Thorsten (faster)"
+msgstr "Thorsten (schneller)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Karlsson (male)"
+msgstr "Karlsson (männlich)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Pavoque (male)"
+msgstr "Pavoque (männlich)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Kerstin (female)"
+msgstr "Kerstin (weiblich)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Ramona (female)"
+msgstr "Ramona (weiblich)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "Eva (female, simple)"
+msgstr "Eva (weiblich, einfach)"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "unknown voice"
+msgstr "unbekannte Stimme"
+
+#: ../src/hyprwink/core/tts/piper.py
+msgid "voice cannot be loaded"
+msgstr "Stimme nicht ladbar"
+
+#: ../src/hyprwink/gestures.py
+msgid "Start dictation"
+msgstr "Sprachaufnahme starten"
+
+#: ../src/hyprwink/gestures.py
+msgid "Stop dictation"
+msgstr "Sprachaufnahme beenden"
+
+#: ../src/hyprwink/gestures.py
+msgid "Stop dictation and send"
+msgstr "Sprachaufnahme beenden und senden"
+
+#: ../src/hyprwink/gestures.py
+msgid "Read aloud"
+msgstr "Vorlesen"
+
+#: ../src/hyprwink/gestures.py
+msgid "Stop reading aloud"
+msgstr "Vorlesen beenden"
+
+#: ../src/hyprwink/gestures.py
+msgid "Enter (sends while dictating)"
+msgstr "Enter (beim Diktat: senden)"
+
+#: ../src/hyprwink/gestures.py
+msgid "Cancel dictation and reading aloud"
+msgstr "Diktat und Vorlesen abbrechen"
+
+#: ../src/hyprwink/gestures.py
+msgid "Esc (cancels dictation and reading aloud)"
+msgstr "Esc (bricht Diktat und Vorlesen ab)"
+
+#: ../src/hyprwink/gestures.py
+msgid "Tab"
+msgstr "Tab"
+
+#: ../src/hyprwink/gestures.py
+msgid "Select all"
+msgstr "Alles markieren"
+
+#: ../src/hyprwink/gestures.py
+msgid "Copy"
+msgstr "Kopieren"
+
+#: ../src/hyprwink/gestures.py
+msgid "Cut"
+msgstr "Ausschneiden"
+
+#: ../src/hyprwink/gestures.py
+msgid "Paste"
+msgstr "Einfügen"
+
+#: ../src/hyprwink/gestures.py
+msgid "Undo"
+msgstr "Rückgängig"
+
+#: ../src/hyprwink/gestures.py
+msgid "Close window"
+msgstr "Fenster schließen"
+
+#: ../src/hyprwink/gestures.py
+msgid "Move window in swipe direction"
+msgstr "Fenster in Wischrichtung schieben"
+
+#: ../src/hyprwink/gestures.py
+msgid "Fullscreen on"
+msgstr "Vollbild an"
+
+#: ../src/hyprwink/gestures.py
+msgid "Fullscreen off"
+msgstr "Vollbild aus"
+
+#: ../src/hyprwink/gestures.py
+msgid "Floating on/off"
+msgstr "Schwebend an/aus"
+
+#: ../src/hyprwink/gestures.py
+msgid "Next window"
+msgstr "Nächstes Fenster"
+
+#: ../src/hyprwink/gestures.py
+msgid "Next workspace"
+msgstr "Nächste Arbeitsfläche"
+
+#: ../src/hyprwink/gestures.py
+msgid "Previous workspace"
+msgstr "Vorige Arbeitsfläche"
+
+#: ../src/hyprwink/gestures.py
+msgid "Play/pause"
+msgstr "Wiedergabe/Pause"
+
+#: ../src/hyprwink/gestures.py
+msgid "Next track"
+msgstr "Nächster Titel"
+
+#: ../src/hyprwink/gestures.py
+msgid "Previous track"
+msgstr "Voriger Titel"
+
+#: ../src/hyprwink/gestures.py
+msgid "Volume up"
+msgstr "Lauter"
+
+#: ../src/hyprwink/gestures.py
+msgid "Volume down"
+msgstr "Leiser"
+
+#: ../src/hyprwink/gestures.py
+msgid "Mute on/off"
+msgstr "Ton aus/an"
+
+#: ../src/hyprwink/gestures.py
+msgid "Ctrl"
+msgstr "Strg"
+
+#: ../src/hyprwink/gestures.py
+msgid "Shift"
+msgstr "Umschalt"
+
+#: ../src/hyprwink/gestures.py
+msgid "Super"
+msgstr "Win"
+
+#: ../src/hyprwink/gestures.py
+msgid "Enter"
+msgstr "Eingabe"
+
+#: ../src/hyprwink/gestures.py
+msgid "Space"
+msgstr "Leertaste"
+
+#: ../src/hyprwink/gestures.py
+msgid "Backspace"
+msgstr "Rücktaste"
+
+#: ../src/hyprwink/gestures.py
+msgid "Del"
+msgstr "Entf"
+
+#: ../src/hyprwink/gestures.py
+msgid "no action"
+msgstr "keine Aktion"
+
+#: ../src/hyprwink/gestures.py
+#, python-brace-format
+msgid "Key: {key}"
+msgstr "Taste: {key}"
+
+#: ../src/hyprwink/gestures.py
+#, python-brace-format
+msgid "Program: {name}"
+msgstr "Programm: {name}"
+
+#: ../src/hyprwink/gestures.py
+#, python-brace-format
+msgid "Command: {command}"
+msgstr "Befehl: {command}"
+
+#: ../src/hyprwink/gestures.py
+#, python-brace-format
+msgid "Wish: {text}"
+msgstr "Wunsch: {text}"
+
+#: ../src/hyprwink/integration.py
+msgid "Quickshell plugin"
+msgstr "Quickshell-Plugin"
+
+#: ../src/hyprwink/integration.py
+msgid "Claude Code hook"
+msgstr "Claude-Code-Hook"
+
+#: ../src/hyprwink/integration.py
+msgid "Models (hand, face, voice, Whisper large-v3-turbo ~1.6 GB)"
+msgstr "Modelle (Hand, Gesicht, Stimme, Whisper large-v3-turbo ~1,6 GB)"
+
+#: ../src/hyprwink/integration.py
+#, python-brace-format
+msgid ""
+"Done. Shortcuts and window rule for your Hyprland config: {path} · Gestures: "
+"hyprwink ui --setup"
+msgstr ""
+"Fertig. Tastenkürzel und Fensterregel für deine Hyprland-Konfiguration: "
+"{path} · Gesten: hyprwink ui --setup"
+
+#: ../src/hyprwink/integration.py
+msgid ""
+"Hyprwink removed for this user. Now uninstall it, e.g. pipx uninstall "
+"hyprwink"
+msgstr ""
+"Hyprwink für diesen Benutzer entfernt. Jetzt deinstallieren, z. B. pipx "
+"uninstall hyprwink"
+
+#: ../src/hyprwink/ui/app.py ../src/hyprwink/ui/camera_page.py
+msgid "Camera"
+msgstr "Kamera"
+
+#: ../src/hyprwink/ui/app.py
+msgid "Gestures"
+msgstr "Gesten"
+
+#: ../src/hyprwink/ui/app.py
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../src/hyprwink/ui/calibration.py
+msgid "Look at the dot · Esc cancels"
+msgstr "Punkt anschauen · Esc bricht ab"
+
+#: ../src/hyprwink/ui/calibration.py
+#, python-brace-format
+msgid ""
+"Round {n} done\n"
+"\n"
+"Sit differently (lean back, to the side, closer)\n"
+"\n"
+"Space: another round · Enter: done"
+msgstr ""
+"Durchgang {n} fertig\n"
+"\n"
+"Anders hinsetzen (zurücklehnen, zur Seite, näher)\n"
+"\n"
+"Leertaste: weiterer Durchgang · Enter: fertig"
+
+#: ../src/hyprwink/ui/calibration.py
+msgid "Face not recognised – look at the dot again"
+msgstr "Gesicht nicht erkannt – Punkt nochmal anschauen"
+
+#: ../src/hyprwink/ui/camera_page.py
+msgid "Recognised gesture"
+msgstr "Erkannte Geste"
+
+#: ../src/hyprwink/ui/camera_page.py
+msgid "Last action"
+msgstr "Letzte Aktion"
+
+#: ../src/hyprwink/ui/camera_page.py
+msgid "Service not reachable"
+msgstr "Dienst nicht erreichbar"
+
+#: ../src/hyprwink/ui/camera_page.py ../src/hyprwink/ui/camera.py
+msgid "Camera not connected"
+msgstr "Kamera nicht verbunden"
+
+#: ../src/hyprwink/ui/camera.py
+msgid "Connecting camera …"
+msgstr "Kamera wird verbunden …"
+
+#: ../src/hyprwink/ui/camera.py
+msgid "Service not running"
+msgstr "Dienst läuft nicht"
+
+#: ../src/hyprwink/ui/camera.py
+msgid "The camera service is restarting or off."
+msgstr "Kameradienst startet neu oder ist aus."
+
+#: ../src/hyprwink/ui/camera.py
+msgid "Camera off"
+msgstr "Kamera aus"
+
+#: ../src/hyprwink/ui/camera.py
+msgid "Switch on with Win+G."
+msgstr "Einschalten mit Win+G."
+
+#: ../src/hyprwink/ui/camera.py
+msgid "Plug in the webcam – the picture appears by itself."
+msgstr "Webcam einstecken – das Bild kommt von selbst."
+
+#: ../src/hyprwink/ui/camera.py
+msgid "Recording mode"
+msgstr "Aufnahme-Modus"
+
+#: ../src/hyprwink/ui/camera.py
+msgid "● Dictating"
+msgstr "● Diktat läuft"
+
+#: ../src/hyprwink/ui/camera.py
+msgid "● Active"
+msgstr "● Aktiv"
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Record"
+msgstr "Aufnehmen"
+
+#: ../src/hyprwink/ui/capture.py ../src/hyprwink/ui/gestures_page.py
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Click Record, show the gesture and vary it a little."
+msgstr "Aufnehmen klicken, Geste zeigen und leicht variieren."
+
+#: ../src/hyprwink/ui/capture.py
+msgid ""
+"Click Record and show the hand shape you grab with (one hand), held still "
+"and varied a little."
+msgstr ""
+"Aufnehmen klicken und die Handform zeigen, mit der du greifst (eine Hand), "
+"stillhalten und leicht variieren."
+
+#: ../src/hyprwink/ui/capture.py
+#, python-brace-format
+msgid "Click Record. Then make the movement {n} times."
+msgstr "Aufnehmen klicken. Danach die Bewegung {n}-mal machen."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Recording cancelled."
+msgstr "Aufnahme abgebrochen."
+
+#: ../src/hyprwink/ui/capture.py
+#, python-brace-format
+msgid "Show the gesture … {n}"
+msgstr "Geste zeigen … {n}"
+
+#: ../src/hyprwink/ui/capture.py
+#, python-brace-format
+msgid "Hands to the start position … {n}"
+msgstr "Hände in die Startposition … {n}"
+
+#: ../src/hyprwink/ui/capture.py
+msgid "● Recording – hold and vary a little: turn, closer, further away"
+msgstr "● Aufnahme – halten und leicht variieren: drehen, näher, weiter weg"
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Hands to the start position."
+msgstr "Hände in die Startposition."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Hold still briefly."
+msgstr "Kurz stillhalten."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Now make the movement."
+msgstr "Jetzt die Bewegung machen."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "…"
+msgstr "…"
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Good. Back to the start position."
+msgstr "Gut. Zurück in die Startposition."
+
+#: ../src/hyprwink/ui/capture.py
+#, python-brace-format
+msgid "Movement {n} of {total}"
+msgstr "Bewegung {n} von {total}"
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Record again"
+msgstr "Nochmal aufnehmen"
+
+#: ../src/hyprwink/ui/capture.py
+msgid "No movement recognised. Record again."
+msgstr "Keine Bewegung erkannt. Nochmal aufnehmen."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "No hand recognised. Record again."
+msgstr "Keine Hand erkannt. Nochmal aufnehmen."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "another gesture"
+msgstr "eine andere Geste"
+
+#: ../src/hyprwink/ui/capture.py
+#, python-brace-format
+msgid "⚠ Similar to {names}."
+msgstr "⚠ Ähnlich wie {names}."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Recorded. To test: hold the shape briefly, drag, change the shape."
+msgstr "Aufgenommen. Zum Test: Handform kurz halten, ziehen, Handform ändern."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Recorded. Make the movement again to test."
+msgstr "Aufgenommen. Zum Test die Bewegung nochmal machen."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Recorded (both hands). Show it again to test."
+msgstr "Aufgenommen (beide Hände). Zum Test nochmal zeigen."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "Recorded. Show it again to test."
+msgstr "Aufgenommen. Zum Test nochmal zeigen."
+
+#: ../src/hyprwink/ui/capture.py
+msgid "✓ Recognised"
+msgstr "✓ Erkannt"
+
+#: ../src/hyprwink/ui/capture.py
+#, python-brace-format
+msgid "Recognised as {name}."
+msgstr "Erkannt als {name}."
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Keyboard shortcut …"
+msgstr "Tastenkürzel …"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Start a program …"
+msgstr "Programm starten …"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Run a command …"
+msgstr "Befehl ausführen …"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Own wish …"
+msgstr "Eigener Wunsch …"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "New gesture"
+msgstr "Neue Geste"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "No gestures yet"
+msgstr "Noch keine Gesten"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Another gesture"
+msgstr "Weitere Geste"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Delete all gestures"
+msgstr "Alle Gesten löschen"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Delete all gestures?"
+msgstr "Alle Gesten löschen?"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Recordings and photos are deleted."
+msgstr "Aufnahmen und Fotos werden gelöscht."
+
+#: ../src/hyprwink/ui/gestures_page.py ../src/hyprwink/ui/settings_page.py
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Edit gesture"
+msgstr "Geste bearbeiten"
+
+#: ../src/hyprwink/ui/gestures_page.py ../src/hyprwink/ui/settings_page.py
+msgid "Save"
+msgstr "Speichern"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Name of the gesture"
+msgstr "Name der Geste"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Type"
+msgstr "Art"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Pose"
+msgstr "Haltung"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Movement"
+msgstr "Bewegung"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "What should the gesture do?"
+msgstr "Was soll die Geste tun?"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Action"
+msgstr "Aktion"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Keyboard shortcut"
+msgstr "Tastenkürzel"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Set"
+msgstr "Festlegen"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Program"
+msgstr "Programm"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Command"
+msgstr "Befehl"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Only saved, it does nothing yet. Tell Claude Code and it implements it."
+msgstr ""
+"Wird nur gespeichert und tut noch nichts. Sag Claude Code Bescheid, dann "
+"setzt er es um."
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Saved."
+msgstr "Gespeichert."
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Record anew"
+msgstr "Neu aufnehmen"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "none yet"
+msgstr "noch keins"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Press the keys …"
+msgstr "Tasten drücken …"
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Shortcut, program, command or wish text is missing."
+msgstr "Kürzel, Programm, Befehl bzw. Wunschtext fehlt."
+
+#: ../src/hyprwink/ui/gestures_page.py
+msgid "Gesture not recorded yet."
+msgstr "Geste noch nicht aufgenommen."
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid ""
+"Hello! This is how I sound when reading aloud. So that you can judge the "
+"speed, I am reading a few whole sentences to you. Imagine a quiet evening, "
+"it is slowly getting dark outside, and a long answer is still waiting on the "
+"screen that you would rather listen to than read yourself. If this is too "
+"fast or too slow, move the slider a little and listen again."
+msgstr ""
+"Hallo! So klinge ich beim Vorlesen. Damit du das Tempo gut einschätzen "
+"kannst, lese ich dir hier ein paar ganze Sätze vor. Stell dir vor, es ist "
+"ein ruhiger Abend, draußen wird es langsam dunkel, und auf dem Bildschirm "
+"wartet noch eine lange Antwort, die du dir lieber anhörst, als sie selbst zu "
+"lesen. Ist dir das zu schnell oder zu langsam, schieb den Regler ein Stück "
+"weiter und hör es dir noch einmal an."
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Fast"
+msgstr "Schnell"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Medium"
+msgstr "Mittel"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Slow"
+msgstr "Langsam"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "cloud"
+msgstr "Cloud"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "local"
+msgstr "lokal"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Provider"
+msgstr "Anbieter"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Language"
+msgstr "Sprache"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Speech output"
+msgstr "Sprachausgabe"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Sample"
+msgstr "Probe"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Stop"
+msgstr "Stopp"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Listen"
+msgstr "Anhören"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Gaze"
+msgstr "Blick"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Reaction"
+msgstr "Reaktion"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Calibration"
+msgstr "Kalibrierung"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Add"
+msgstr "Ergänzen"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Calibrate"
+msgstr "Kalibrieren"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Show gaze point"
+msgstr "Blickpunkt anzeigen"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Dim inactive windows"
+msgstr "Inaktive Fenster abdunkeln"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "General"
+msgstr "Allgemein"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Display language"
+msgstr "Anzeigesprache"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Design"
+msgstr "Design"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Start with the computer"
+msgstr "Mit dem Computer starten"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Camera off at start"
+msgstr "Kamera beim Start aus"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Closing minimises to the bar"
+msgstr "Schließen minimiert in die Leiste"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Mini view"
+msgstr "Mini-Ansicht"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Import"
+msgstr "Importieren"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Export"
+msgstr "Exportieren"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "API key"
+msgstr "API-Schlüssel"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "saved"
+msgstr "gespeichert"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Saving failed"
+msgstr "Speichern fehlgeschlagen"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Change"
+msgstr "Ändern"
+
+#: ../src/hyprwink/ui/settings_page.py
+#, python-brace-format
+msgid "API key {provider}"
+msgstr "API-Schlüssel {provider}"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "missing"
+msgstr "fehlt"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Voice"
+msgstr "Stimme"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Search"
+msgstr "Suchen"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Default"
+msgstr "Standard"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Loading failed"
+msgstr "Laden fehlgeschlagen"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Strength"
+msgstr "Stärke"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Speed"
+msgstr "Tempo"
+
+#. Translators: the decimal separator
+#: ../src/hyprwink/ui/settings_page.py
+msgid "."
+msgstr ","
+
+#: ../src/hyprwink/ui/settings_page.py
+#, python-brace-format
+msgid "{n} round"
+msgid_plural "{n} rounds"
+msgstr[0] "{n} Durchgang"
+msgstr[1] "{n} Durchgänge"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "not calibrated"
+msgstr "nicht kalibriert"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "full"
+msgstr "voll"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "short"
+msgstr "kurz"
+
+#: ../src/hyprwink/ui/settings_page.py
+#, python-brace-format
+msgid "Round {n}"
+msgstr "Durchgang {n}"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Removing failed"
+msgstr "Entfernen fehlgeschlagen"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "No monitors found"
+msgstr "Keine Monitore gefunden"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "No face recognised – try again"
+msgstr "Kein Gesicht erkannt – nochmal"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Export configuration"
+msgstr "Konfiguration exportieren"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "exported"
+msgstr "exportiert"
+
+#: ../src/hyprwink/ui/settings_page.py
+#, python-brace-format
+msgid "Export failed: {error}"
+msgstr "Export fehlgeschlagen: {error}"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Replace everything?"
+msgstr "Alles ersetzen?"
+
+#: ../src/hyprwink/ui/settings_page.py
+msgid "Import configuration"
+msgstr "Konfiguration importieren"
+
+#: ../src/hyprwink/ui/settings_page.py
+#, python-brace-format
+msgid "Import failed: {error}"
+msgstr "Import fehlgeschlagen: {error}"
+
+#: ../src/hyprwink/ui/style.py
+msgid "Theme 1"
+msgstr "Theme 1"
+
+#: ../src/hyprwink/ui/style.py
+msgid "Theme 2"
+msgstr "Theme 2"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "index finger"
+msgstr "Zeigefinger"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "middle finger"
+msgstr "Mittelfinger"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "ring finger"
+msgstr "Ringfinger"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "little finger"
+msgstr "kleiner Finger"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "right hand"
+msgstr "rechte Hand"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "left hand"
+msgstr "linke Hand"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "OK sign"
+msgstr "OK-Zeichen"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "thumb and index finger together"
+msgstr "Daumen und Zeigefinger zusammen"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "thumbs up"
+msgstr "Daumen hoch"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "thumbs down"
+msgstr "Daumen runter"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "fist, thumb out to the side"
+msgstr "Faust, Daumen zur Seite"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "fist"
+msgstr "Faust"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "four fingers stretched, thumb folded in"
+msgstr "vier Finger gestreckt, Daumen eingeklappt"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "open hand, fingers spread"
+msgstr "offene Hand, Finger gespreizt"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "open hand, fingers together"
+msgstr "offene Hand, Finger aneinander"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "thumb"
+msgstr "Daumen"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "fingers half bent"
+msgstr "Finger halb gebeugt"
+
+#: ../src/hyprwink/vision/describe.py
+#, python-brace-format
+msgid "{finger} stretched"
+msgstr "{finger} gestreckt"
+
+#: ../src/hyprwink/vision/describe.py
+#, python-brace-format
+msgid "{fingers} and {last} stretched"
+msgstr "{fingers} und {last} gestreckt"
+
+#: ../src/hyprwink/vision/describe.py
+msgid ", spread"
+msgstr ", gespreizt"
+
+#: ../src/hyprwink/vision/describe.py
+msgid ", together"
+msgstr ", aneinander"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "to the right"
+msgstr "nach rechts"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "to the left"
+msgstr "nach links"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "up"
+msgstr "nach oben"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "down"
+msgstr "nach unten"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "apart"
+msgstr "auseinander"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "together"
+msgstr "zusammen"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "both hands"
+msgstr "beide Hände"
+
+#: ../src/hyprwink/vision/describe.py
+msgid "grab, drag, let go"
+msgstr "greifen, ziehen, loslassen"

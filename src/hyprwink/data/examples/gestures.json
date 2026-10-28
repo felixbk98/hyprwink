@@ -1,0 +1,60 @@
+{
+ "gestures": [
+  {
+   "id": "example1",
+   "action": {
+    "type": "builtin",
+    "value": "dictate_start"
+   }
+  },
+  {
+   "id": "example2",
+   "action": {
+    "type": "builtin",
+    "value": "read_start"
+   }
+  },
+  {
+   "id": "example3",
+   "action": {
+    "type": "builtin",
+    "value": "dictate_send"
+   }
+  },
+  {
+   "id": "example4",
+   "action": {
+    "type": "builtin",
+    "value": "cancel"
+   }
+  },
+  {
+   "id": "example5",
+   "action": {
+    "type": "builtin",
+    "value": "cancel"
+   }
+  },
+  {
+   "id": "example6",
+   "action": {
+    "type": "builtin",
+    "value": "window_close"
+   }
+  },
+  {
+   "id": "example7",
+   "action": {
+    "type": "builtin",
+    "value": "window_swipe"
+   }
+  },
+  {
+   "id": "example8",
+   "action": {
+    "type": "builtin",
+    "value": "window_swipe"
+   }
+  }
+ ]
+}
